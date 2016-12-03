@@ -8,8 +8,8 @@ import com.hiveit.pe.eai.productservice.util.Constantes;
 
 public class ProductServiceImpl implements ProductService {
 	
-	XrootDaoImpl xrootDaoImpl;
-	Constantes propertiesInterno;
+	XrootDaoImpl xrootDaoImpl = new XrootDaoImpl();
+	Constantes propertiesInterno = new Constantes();
 	@Override
 	public String actualizarCodigo(String codOld, String codNew) {
 		String response = null;
