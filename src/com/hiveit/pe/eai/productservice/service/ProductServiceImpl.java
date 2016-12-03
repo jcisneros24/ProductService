@@ -35,7 +35,7 @@ public class ProductServiceImpl implements ProductService {
 				response = "Error en la validacion de campos";
 			}
 		}catch (DBException e) {
-			response = e.getCode();
+			response = "{Error en la DB : }"+e.getCode();
 			response = e.getMessage();
 		}catch (Exception e) {
 			response = "{Error en el flujo del proceso: }"+e.getMessage();
