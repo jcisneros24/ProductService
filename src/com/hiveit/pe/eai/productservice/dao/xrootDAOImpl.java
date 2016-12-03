@@ -37,7 +37,7 @@ public class xrootDAOImpl implements xrootDAO {
 	public ProductBeanResponse deleteProduct(ProductRequestBean request) {
 		ProductBeanResponse response = null;
 		Connection accessDB = null;
-		CallableStatement cs = null;
+		//CallableStatement cs = null;
 		try {
 			response = new ProductBeanResponse();
 			accessDB = cn.getConnection();
