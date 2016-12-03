@@ -3,6 +3,7 @@ package com.hiveit.pe.eai.productservice.bean;
 public class ProductBeanResponse {
 	private String codRpta;
 	private String msgRpta;
+	
 	public String getCodRpta() {
 		return codRpta;
 	}
@@ -15,5 +16,4 @@ public class ProductBeanResponse {
 	public void setMsgRpta(String msgRpta) {
 		this.msgRpta = msgRpta;
 	}
-
 }
