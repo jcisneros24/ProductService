@@ -17,7 +17,7 @@ public class ProductServiceImpl implements ProductService {
 		try {
 			productBeanResponse = new ProductBeanResponse();
 			
-			if ((!codOld.isEmpty() || codOld != null) && (!codNew.isEmpty() || codNew != null)) {
+			if ((!codOld.isEmpty() && codOld != null) && (!codNew.isEmpty() && codNew != null)) {
 				ProductBeanRequest productBeanRequest = new ProductBeanRequest();
 				productBeanRequest.setCodArtiOld(codOld);
 				productBeanRequest.setCodArtiNew(codNew);
