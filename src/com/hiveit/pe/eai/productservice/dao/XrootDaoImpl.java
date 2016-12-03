@@ -27,10 +27,10 @@ public class XrootDaoImpl implements XrootDao {
 			int numFafectadas = cs.executeUpdate();
 			if(numFafectadas==0){
 				response.setCodRpta("0");
-				response.setMsgRpta("Se actualizo correctamente el producto.");;
+				response.setMsgRpta("Se actualizo correctamente el producto.");
 			}
 		} catch (SQLException e) {
-			response.setCodRpta(e.getLocalizedMessage());
+			response.setCodRpta("1");
 			response.setMsgRpta(e.getMessage());
 			throw new DBException( response.getCodRpta(), response.getMsgRpta());
 		}

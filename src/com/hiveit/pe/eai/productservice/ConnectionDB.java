@@ -27,7 +27,7 @@ public class ConnectionDB {
 	            if(e.getErrorCode() == 0){
 	                JOptionPane.showMessageDialog(null, "El servidor de base de datos no responde.\n"
 	                                                    + "Verifique que el servidor de base de datos este activo.\n"
-	                                                    + "Tambien Verifique que exista la base de datos bdsistemas", 
+	                                                    + "Tambien Verifique que exista la base de datos xroot", 
 	                                                    "Error: Coneccion Fallida.", JOptionPane.ERROR_MESSAGE);
 	            }
         	}catch (final ClassNotFoundException e) {
